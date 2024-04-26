@@ -1,0 +1,170 @@
+body,
+.navContainer {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #d2cece !important;
+    
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(21, 21, 20) !important;
+}
+
+/*header*/
+.header-class {
+    height: 590px;
+    display: flex;
+    /* background-color: #466995; */
+    width: 100% !important;
+    height: 9.2rem;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+header.header-class {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* add space for fixed header when it's fixed to top */
+header.header-class+.content {
+    margin-top: 8rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    background-color: hsl(0, 0%, 100%) !important;
+    width: 35px;
+    height: 3px;
+    margin: 6px 0;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.navContainer {
+    /*navContainer in  js*/
+    align-items: center;
+    width: 240px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    border: 1px solid #f5f1f1;
+}
+
+nav a {
+    margin-left: 10px;
+}
+
+.menuBar-button {
+    background-color: transparent;
+    height: fit-content;
+    margin: 20px !important;
+    opacity: 0.9;
+}
+
+.closeMenuBarButton {
+    font-size: 2em;
+    font-weight: 900;
+    background-color: transparent;
+    height: fit-content;
+    opacity: 0.9;
+    margin-left: 198px;
+}
+
+header h1 {
+    color: #f5f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+/*jumbotron*/
+.inventors-title-div {
+    background-image: url('images/jumpstronTitleBackground.png');
+    background-size: cover;
+    height: 23em;
+    /* margin: 100px 0px; */
+    position: sticky;
+    color: #f5f1f1;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.inventors-title {
+    padding: 0px;
+    text-align: center;
+    
+    background-color: rgba(41, 40, 39, 0.5);
+    font-family: italic;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+
+
+
+/*main*/
+h3 {
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main.section {
+    margin-top: 10px;
+}
+
+
+p {
+    margin-left: 40px;
+    text-align: justify;
+    font-size: 20px;
+    width: 500px;
+}
+
+figure img {
+    height: 20vmax;
+    width: 20vmax;
+    border-radius: 4px;
+
+}
+
+figure {
+    margin-top: 30px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    margin-top: 50px;
+}
+
+footer.row {
+    align-items: center;
+}
+
+.social-media img {
+    height: 1.5em;
+}
+
+
+
+  @media (min-width: 751px) and (max-width: 999px) {
+    html {
+
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    html {
+      width: ;
+    }
+  }
+
+
