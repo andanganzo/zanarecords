@@ -2,44 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
-    <title>inventors</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="inventors.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
+  <title>inventors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header-class container">
-
-    <!--"nav-div" contains inventors list navigation liks-->
-    <div class="nav-div"></div>
-    <button class="menuBar-button" onclick="
-            menuBarButton.style='opacity: 0';
-            logoH1.style='opacity: 0';
-            openCloseMenu();
-            ">
+  <header>
+    <div class="row">
+      <!--"nav-div" contains inventors list navigation liks-->
+      <div class="nav-div"></div>
+      <button class="menuBar-button" onclick="
+                menuBarButton.style='opacity: 0';
+                logoH1.style='opacity: 0';
+                openCloseMenu();
+                ">
         <div class="menu-bar">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-
+    </div>
     </button>
     <div class="a-div"><a class="h1-a" href="index.html">
-            <h1 class="logoH1">ZanaRecords</h1>
-        </a></div>
+        <h1 class="logoH1">ZanaRecords</h1>
+      </a></div>
 
-</header>
-    
+  </header>
+
   <!--Marie Van Brittan Brown-->
-  <section class=" content">
+  <section class="container">
     <div class="divContained-Img-Description row" id="Marie_Van_Brittan_Brown">
-      <article>
+      <div class="col-sm-6">
         <h3>Marie Van B Brown</h3>
         <figure>
           <img class=" thumbnail-img" src="images/Marie van Brittan.png">
@@ -52,34 +54,34 @@
           which she created in 1966 and was accepted in 1969.
           <a href="https://en.wikipedia.org/wiki/Marie_Van_Brittan_Brown" target="_blank">learn more</a>
         </p>
-      </article>
+      </div>
     </div>
   </section>
 
-<section>
-  <footer>
+  <section>
+    <footer>
       <div class="row first-footer-div">
-          <p class="col-sm-4">&copy;2024</p>
+        <p class="col-sm-4">&copy;2024</p>
 
-          <div class="col-sm-8 text-right">
-              <div class="col-sm-1 social-media">
-                  <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/facebook-grey.svg">
-              </div>
-              <div class="col-sm-1 social-media">
-                  <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/twitter-grey.svg">
-              </div>
-              <div class="col-sm-1 social-media">
-                  <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/instagram-grey.svg">
-              </div>
-              <div class="col-sm-1 social-media">
-                  <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/medium-grey.svg">
-              </div>
+        <div class="col-sm-8 text-right">
+          <div class="col-sm-1 social-media">
+            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/facebook-grey.svg">
           </div>
+          <div class="col-sm-1 social-media">
+            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/twitter-grey.svg">
+          </div>
+          <div class="col-sm-1 social-media">
+            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/instagram-grey.svg">
+          </div>
+          <div class="col-sm-1 social-media">
+            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/medium-grey.svg">
+          </div>
+        </div>
       </div>
-  </footer>
-</section>
-</section>
-<script src="interactions.js"></script>
+    </footer>
+  </section>
+  </section>
+  <script src="interactions.js"></script>
 </body>
 
 </html>
