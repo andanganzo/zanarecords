@@ -2,46 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
-    <title>inventors</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="inventors.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
+  <title>inventors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  <link type="text/css" href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header-class container">
-
-    <!--"nav-div" contains inventors list navigation liks-->
-    <div class="nav-div"></div>
-    <button class="menuBar-button" onclick="
+  <header>
+    <div class="row">
+      <!--"nav-div" contains inventors list navigation liks-->
+      <div class="nav-div"></div>
+      <button class="menuBar-button" onclick="
             menuBarButton.style='opacity: 0';
             logoH1.style='opacity: 0';
             openCloseMenu();
             ">
         <div class="menu-bar">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-
+    </div>
     </button>
     <div class="a-div"><a class="h1-a" href="index.html">
-            <h1 class="logoH1">ZanaRecords</h1>
-        </a></div>
+        <h1 class="logoH1">ZanaRecords</h1>
+      </a></div>
 
-</header>
+  </header>
   <!--Alexander Miles-->
-  <section class="content">
-    <div class="divContained-Img-Description row" id="alexander-miles">
-      <article>
+  <section class="container">
+    <div class="row" id="alexander-miles">
+      <div class="col-sm-6">
         <h3>Alexander Miles</h3>
         <figure>
-          <img  class=" thumbnail-img" src="images/alaexandre.png">
+          <img class=" thumbnail-img" src="images/alaexandre.png">
           <figcaption>Mies and his invetion plan </figcaption>
         </figure>
         <p>
@@ -57,32 +59,30 @@
           <a href="https://www.invent.org/inductees/alexander-miles#:~:text=Alexander%20Miles%2C%20who%20contributed%20to,and%20the%20elevator%20shaft%20doors."
             target="_blank">learn more</a>
         </p>
-      </article>
+      </div>
     </div>
 
   </section>
 
 
-  <section>
-    <footer>
-      <div class="row first-footer-div">
-        <p class="col-sm-4">&copy;2024</p>
+  <footer>
+    <div class="row first-footer-div">
+      <p class="col-sm-4">&copy;2024</p>
 
-        <div class="col-sm-8 text-right">
-          <div class="col-sm-1 social-media">
-            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/facebook-grey.svg">
-          </div>
-          <div class="col-sm-1 social-media">
-            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/twitter-grey.svg">
-          </div>
-          <div class="col-sm-1 social-media">
-            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/instagram-grey.svg">
-          </div>
-          <div class="col-sm-1 social-media">
-            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/medium-grey.svg">
-          </div>
+      <div class="col-sm-8 text-right">
+        <div class="col-sm-1 social-media">
+          <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/facebook-grey.svg">
+        </div>
+        <div class="col-sm-1 social-media">
+          <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/twitter-grey.svg">
+        </div>
+        <div class="col-sm-1 social-media">
+          <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/instagram-grey.svg">
+        </div>
+        <div class="col-sm-1 social-media">
+          <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/medium-grey.svg">
         </div>
       </div>
-    </footer>
-  </section>
+    </div>
+  </footer>
   <script src="interactions.js"></script>
