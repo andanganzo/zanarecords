@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html ang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
     <title>inventors</title>
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header-class container">
-
-        <!--"nav-div" contains inventors list navigation liks-->
-        <div class="nav-div"></div>
-        <button class="menuBar-button" onclick="
+    <header>
+        <div class="row">
+            <!--"nav-div" contains inventors list navigation liks-->
+            <div class="nav-div"></div>
+            <button class="menuBar-button" onclick="
                 menuBarButton.style='opacity: 0';
                 logoH1.style='opacity: 0';
                 openCloseMenu();
                 ">
-            <div class="menu-bar">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
+                <div class="menu-bar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+        </div>
         </button>
         <div class="a-div"><a class="h1-a" href="index.html">
                 <h1 class="logoH1">ZanaRecords</h1>
@@ -36,146 +39,136 @@
 
     </header>
 
-    <section class="jumbotron inventors-title-div">
-        <div class="container">
-            <div class="row text-center">
-                <h1 class="inventors-title">Inventors who had biggest impact today world's technology.</h1>
-            </div>
+    <section class="jumbotron">
+        <div class="row text-center">
+            <h1 class="inventors-title">Inventors who had biggest impact today world's technology.</h1>
         </div>
     </section>
 
 
 
 
-    <section class=" mainSection">
-        <div class="container">
-            <div class="for-sm">
-                <!--Marie Van Brittan Brown-->
+    <section class="container">
+
+        <div class="row">
+
+
+            <div class="col-sm-6">
                 <a href="marie-van-brittan.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/Marie van Brittan.png">
-                            <h3>Marie Van Brittan Brown</h3>
-                        </div>
+                    <figure>
+                        <img src="imageProfile/Marie van Brittan.png">
                     </figure>
+                    <h3>Marie Van Brittan Brown</h3>
                 </a>
-
-
-                <!--Lewis Latimer-->
-                <a href="lewis-lamer.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/lewis.png">
-                            <h3>Lewis Latimer</h3>
-                        </div>
-                    </figure>
-                </a>
-
-
-                <!--Grace Hopper-->
-                <a href="grace-hopper.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/hopper.png">
-                            <h3>Grace Hopper</h3>
-                        </div>
-                    </figure>
-                </a>
-
-                <!--Garret Augustus Morgan-->
-                <a href="garret-morgan.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/Garrett-Morgan.jpg">
-                            <h3>Garret Augustus Morgan</h3>
-                        </div>
-                    </figure>
-
-                </a>
-
-                <!--Frederick McKinley Jones-->
-                <a href="frederic-mckinley.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/Frederick MicKinley.png">
-                            <h3>Frederick McKinley Jones</h3>
-                        </div>
-                    </figure>
-                </a>
-
-
-                <!--Gladys Mae West-->
-                <a href="glagys-mae.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/Dr.Gladys B.png">
-                            <h3>Gladys Mae West</h3>
-                        </div>
-                    </figure>
-
-                </a>
-
-                <!--Charles Babbage-->
-                <a href="charles-baggage.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/charles.png">
-                            <h3>Charles Babbage</h3>
-                        </div>
-                    </figure>
-                </a>
-
-
-                <!--Tim Berners-Lee-->
-                <a href="tim-berners.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/Berners-Lee-1000.jpg">
-                            <h3>Tim Berners-Lee</h3>
-                        </div>
-                    </figure>
-                </a>
-
-
-                <!--Alexander Miles-->
-                <a href="alexandre-miles.html">
-                    <figure class="col-sm-4">
-                        <div class="row text-center">
-                            <img src="imageProfile/alaexandre.png">
-                            <h3>Alexander Miles</h3>
-                        </div>
-                    </figure>
-                </a>
-
             </div>
+
+            <!--Lewis Latimer-->
+            <div class="col-sm-6">
+                <a href="lewis-lamer.html">
+                    <figure>
+                        <img src="imageProfile/lewis.png">
+                    </figure>
+                    <h3>Lewis Latimer</h3>
+                </a>
+            </div>
+
+            <!--Grace Hopper-->
+            <div class="col-sm-6">
+                <a href="grace-hopper.html">
+                    <figure>
+                        <img src="imageProfile/hopper.png">
+                    </figure>
+                    <h3>Grace Hopper</h3>
+                </a>
+            </div>
+            <!--Garret Augustus Morgan-->
+            <div class="col-sm-6">
+                <a href="garret-morgan.html">
+                    <figure>
+                        <img src="imageProfile/Garrett-Morgan.jpg">
+                    </figure>
+                    <h3>Garret Augustus Morgan</h3>
+                </a>
+            </div>
+
+            <!--Frederick McKinley Jones-->
+            <div class="col-sm-6">
+                <a href="frederic-mckinley.html">
+                    <figure>
+                        <img src="imageProfile/Frederick MicKinley.png">
+                    </figure>
+                    <h3>Frederick McKinley Jones</h3>
+                </a>
+            </div>
+
+            <!--Gladys Mae West-->
+            <div class="col-sm-6">
+                <a href="glagys-mae.html">
+                    <figure>
+                        <img src="imageProfile/Dr.Gladys B.png">
+                    </figure>
+                    <h3>Gladys Mae West</h3>
+                </a>
+            </div>
+
+            <!--Charles Babbage-->
+            <div class="col-sm-6">
+                <a href="charles-baggage.html">
+                    <figure>
+                        <img src="imageProfile/charles.png">
+                    </figure>
+                    <h3>Charles Babbage</h3>
+                </a>
+            </div>
+
+            <!--Tim Berners-Lee-->
+            <div class="col-sm-6">
+                <a href="tim-berners.html">
+                    <figure>
+                        <img src="imageProfile/Berners-Lee-1000.jpg">
+                        <h3>Tim Berners-Lee</h3>
+                </a>
+            </div>
+
+            <!--Alexander Miles-->
+            <div class="col-sm-6">
+                <a href="alexandre-miles.html">
+                    <figure>
+                        <img src="imageProfile/alaexandre.png">
+                    </figure>
+                    <h3>Alexander Miles</h3>
+                </a>
+            </div>
+
+
+
+
+
         </div>
     </section>
+    <footer>
+        <div class="row first-footer-div">
+            <p class="col-sm-4">&copy;2024</p>
 
-
-    <section>
-        <footer>
-            <div class="row first-footer-div">
-                <p class="col-sm-4">&copy;2024</p>
-
-                <div class="col-sm-8 text-right">
-                    <div class="col-sm-1 social-media">
-                        <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/facebook-grey.svg">
-                    </div>
-                    <div class="col-sm-1 social-media">
-                        <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/twitter-grey.svg">
-                    </div>
-                    <div class="col-sm-1 social-media">
-                        <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/instagram-grey.svg">
-                    </div>
-                    <div class="col-sm-1 social-media">
-                        <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/medium-grey.svg">
-                    </div>
+            <div class="col-sm-8 text-right">
+                <div class="col-sm-1 social-media">
+                    <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/facebook-grey.svg">
+                </div>
+                <div class="col-sm-1 social-media">
+                    <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/twitter-grey.svg">
+                </div>
+                <div class="col-sm-1 social-media">
+                    <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/instagram-grey.svg">
+                </div>
+                <div class="col-sm-1 social-media">
+                    <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/medium-grey.svg">
                 </div>
             </div>
-        </footer>
-    </section>
+        </div>
+    </footer>
     <script src="interactions.js"></script>
 
 </body>
 
 </html>
+<figure>
