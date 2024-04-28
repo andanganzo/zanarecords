@@ -1,0 +1,222 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  /* background-color: rgb(64, 63, 63) !important; */
+}
+
+figure img {
+  height: 20vmax;
+  width: 20vmax;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+div > h2 {
+  font-size: 2vmax;
+  
+}
+
+
+
+/*header*/
+header {
+  height: 590px;
+  background-color: rgb(23, 30, 93) !important;
+  width: 100% !important;
+  height: 9.2rem;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* add space for fixed header when it's fixed to top */
+header +.content {
+  margin-top: 8rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: hsl(0, 0%, 100%) !important;
+  width: 25px;
+  height: 2px;
+  margin: 6px 0;
+  color: hsl(0, 0%, 100%);
+
+}
+
+.navContainer {
+  /*navContainer in  js*/
+  align-items: center;
+  width: fit-content;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  background-color: #f3f3f3;
+}
+
+nav a {
+  margin-left: 10px;
+}
+
+.menuBar-button {
+  background-color: transparent;
+  margin: 10px 0px 0px 0px !important;
+  opacity: 0.9;
+  border: none;
+
+}
+
+.closeMenuBarButton {
+  font-size: 2em;
+  font-weight: 900;
+  background-color: transparent;
+  height: fit-content;
+  opacity: 0.9;
+  margin-left: 198px;
+}
+
+
+
+header div h1 {
+  color: #f3f3f3;
+  font-family:Ranchers;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px !important;
+  padding: 0px !important;
+  text-decoration: dotted;
+  }
+
+header > .a-div {
+  width: fit-content;
+  margin: -32px 40px;
+  font-family: serif;
+  
+}
+
+
+/* Customizations of Bootstrap classes */
+
+.for-sm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(52, 54, 53) !important;
+}
+
+
+.inventors-title-div {
+  display: flex;
+  align-items: center;
+  height: 350px;
+  background-image: url("images/jumpstronTitleBackground.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*jumbtron*/
+.jumbotron {
+  margin-top: 80px;
+}
+.jumbotron h1 {
+  background-color: rgba(41, 40, 39, 0.5);
+  display: inline-block;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+
+.jumbotron h3 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+a h3 {
+  text-align: left;
+  text-wrap: nowrap;
+  font-weight: 700;
+}
+@media (min-width: 280px) and (max-width: 700px) {
+  .for-sm img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 25em;
+    width: 25em;
+    
+
+  }
+}
+/*footer*/
+.col-sm-4/*footer paragraph*/ {
+  margin: 25px 20px 15px;
+  min-width: 60px;
+  padding: 1px;
+}
+.first-footer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-sm-1 img {
+  min-width: 1.2em;
+  min-height: 1.2em;
+}
+
+@media (min-width: 280px) and (max-width: 700px) {
+  div>h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vmax;
+
+  }
+}
+
+@media (min-width: 280px) and (max-width: 700px) {
+  .col-sm-8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: fit-content;
+   overflow: scroll;
+    
+  }
+}
+
+
+
+@media (min-width: 280px) and (max-width: 700px) {
+  footer.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+  }
+}
+
+@media (min-width: 280px) and (max-width: 2000px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+}
