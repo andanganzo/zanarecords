@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
-  /* background-color: rgb(64, 63, 63) !important; */
+  background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+  background-color: rgb(64, 63, 63) !important;
 }
 
 figure img {
@@ -11,21 +12,16 @@ figure img {
   flex-wrap: wrap;
 }
 
-
-
-div > h2 {
+div>h2 {
   font-size: 2vmax;
-  
+
 }
-
-
 
 /*header*/
 header {
-  height: 590px;
-  background-color: rgb(23, 30, 93) !important;
+  background-color: rgb(23, 30, 93);
   width: 100% !important;
-  height: 9.2rem;
+  height: 7em;
   z-index: 1;
   transition: all 0.2s ease-in-out;
 }
@@ -38,7 +34,7 @@ header {
 }
 
 /* add space for fixed header when it's fixed to top */
-header +.content {
+header+.content {
   margin-top: 8rem;
 }
 
@@ -64,12 +60,12 @@ header +.content {
 }
 
 nav a {
-  margin-left: 10px;
+  margin-left: 2em;
 }
 
 .menuBar-button {
   background-color: transparent;
-  margin: 10px 0px 0px 0px !important;
+  margin: 10px 0px 0px 20px !important;
   opacity: 0.9;
   border: none;
 
@@ -80,143 +76,91 @@ nav a {
   font-weight: 900;
   background-color: transparent;
   height: fit-content;
+  width: fit-content;
   opacity: 0.9;
   margin-left: 198px;
 }
 
-
-
 header div h1 {
   color: #f3f3f3;
-  font-family:Ranchers;
+  font-family: Ranchers;
   letter-spacing: 0.2em;
   font-weight: bold;
   font-size: 20px;
-  margin: 0px !important;
+  margin: 5px !important;
   padding: 0px !important;
-  text-decoration: dotted;
-  }
+}
 
-header > .a-div {
+header>.a-div {
   width: fit-content;
   margin: -32px 40px;
   font-family: serif;
-  
+
 }
 
 
-/* Customizations of Bootstrap classes */
-
-.for-sm {
-  display: flex;
-  flex-wrap: wrap;
+/**********Section***************/
+section {
+  /* background-color: rgb(85, 82, 82); */
   align-items: center;
-  justify-content: center;
-  background-color: rgb(52, 54, 53) !important;
+  margin-top: 120px;
 }
 
 
-.inventors-title-div {
+/*--------------------new-------------------------------------*/
+h3 {
   display: flex;
-  align-items: center;
-  height: 350px;
-  background-image: url("images/jumpstronTitleBackground.png");
-  background-size: cover;
-  background-position: center;
 }
 
-
-/*jumbtron*/
 .jumbotron {
-  margin-top: 80px;
-}
-.jumbotron h1 {
-  background-color: rgba(41, 40, 39, 0.5);
-  display: inline-block;
-  color: #FFFFFF !important;
-  font-weight: 700;
-  padding: 10px 35px;
-  border-radius: 5px;
-}
-
-.jumbotron h3 {
-  color: #FFFFFF;
-  font-weight: bold;
-}
-a h3 {
-  text-align: left;
-  text-wrap: nowrap;
-  font-weight: 700;
-}
-@media (min-width: 280px) and (max-width: 700px) {
-  .for-sm img {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 25em;
-    width: 25em;
-    
-
-  }
-}
-/*footer*/
-.col-sm-4/*footer paragraph*/ {
-  margin: 25px 20px 15px;
-  min-width: 60px;
-  padding: 1px;
-}
-.first-footer-div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  background-image: url('images/jumpstronTitleBackground.png');
+  background-size: cover;
+  opacity: 0.8;
+  color: #ffffff;
+  height: 20em;
+  margin-top: 100px;
 }
 
-.col-sm-1 img {
-  min-width: 1.2em;
-  min-height: 1.2em;
+.jumbotron h1 {
+  font-weight: 1000;
+  margin: 0;
+  color: #FFFFFF !important;
+  background-color: rgba(41, 40, 39, 0.5);
 }
 
-@media (min-width: 280px) and (max-width: 700px) {
-  div>h2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    font-size: 2vmax;
+section .row figure img {
+  margin: 0 0 5px;
+  width: 90%;
 
-  }
 }
 
-@media (min-width: 280px) and (max-width: 700px) {
-  .col-sm-8 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   height: fit-content;
-   overflow: scroll;
-    
-  }
+.col-sm-6 {
+  margin-bottom: 2em;
 }
 
-
-
-@media (min-width: 280px) and (max-width: 700px) {
-  footer.row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-
-  }
+figure img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
 }
 
-@media (min-width: 280px) and (max-width: 2000px) {
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+figure {
+  margin-bottom: 0px;
+}
 
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
 
-  }
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .row {
+  display: flex;
+  align-items: center;
 }
