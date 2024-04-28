@@ -2,46 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
-    <title>inventors</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="inventors.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
+  <title>inventors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header-class container">
-
-    <!--"nav-div" contains inventors list navigation liks-->
-    <div class="nav-div"></div>
-    <button class="menuBar-button" onclick="
-            menuBarButton.style='opacity: 0';
-            logoH1.style='opacity: 0';
-            openCloseMenu();
-            ">
+  <header>
+    <div class="row">
+      <!--"nav-div" contains inventors list navigation liks-->
+      <div class="nav-div"></div>
+      <button class="menuBar-button" onclick="
+                menuBarButton.style='opacity: 0';
+                logoH1.style='opacity: 0';
+                openCloseMenu();
+                ">
         <div class="menu-bar">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-
+    </div>
     </button>
     <div class="a-div"><a class="h1-a" href="index.html">
-            <h1 class="logoH1">ZanaRecords</h1>
-        </a></div>
+        <h1 class="logoH1">ZanaRecords</h1>
+      </a></div>
 
-</header>
+  </header>
   <!--Gladys Mae West-->
-  <section class="content">
+  <section class="container">
     <div class="divContained-Img-Description row" id="Gladys_West">
-      <article>
+      <div class="col-sm-6">
         <h3>Gladys Mae West</h3>
         <figure>
-          <img  class=" thumbnail-img" src="images/Dr.Gladys B.png">
+          <img class=" thumbnail-img" src="images/Dr.Gladys B.png">
           <figcaption>West in 2018 and GPS symbol</figcaption>
         </figure>
         <p>
@@ -53,7 +55,7 @@
           West was awarded the Webby Lifetime Achievement Award for the development of satellite geodesy models.<br></b>
           <a href="https://en.wikipedia.org/wiki/Gladys_West" target="_blank">learn more</a>
         </p>
-      </article>
+      </div>
     </div>
   </section>
 
