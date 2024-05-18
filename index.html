@@ -8,8 +8,8 @@
     <title>inventors</title>
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,151 +18,166 @@
 
 <body>
     <header>
-        <div class="row">
-            <!--"nav-div" contains inventors list navigation liks-->
-            <div class="nav-div"></div>
+        <!--"nav-div" contains inventors list navigation liks-->
+        <div class="nav-div"></div>
+        <div class="button-menu-holder-container">
             <button class="menuBar-button" onclick="
                 menuBarButton.style='opacity: 0';
                 logoH1.style='opacity: 0';
-                openCloseMenu();
+                openCloseMenuHome();
                 ">
                 <div class="menu-bar">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
+            </button>
+            <a class="a-linkTo-homePage" href="index.html">
+                <h1 class="logo-zanaRecords logoH1">ZanaRecords</h1>
+            </a>
         </div>
-        </button>
-        <div class="a-div"><a class="h1-a" href="index.html">
-                <h1 class="logoH1">ZanaRecords</h1>
-            </a></div>
-
+        <!-- <nav class="categories-nav"> -->
+        <ul class="categories-ul">
+            <li class=""><a href="index.html">Inventors</a></li>
+            <li class=""><a href="">Intertainment</a></li>
+            <li class=""><a href="">Politics</a></li>
+            <!-- </ul> -->
+            </nav>
     </header>
 
-    <section class="jumbotron">
-        <div class="row text-center">
-            <h1 class="inventors-title">Inventors who had biggest impact today world's technology.</h1>
-        </div>
+
+
+
+    <section class="inventors-title">
+        <h1>Inventors who had biggest impact today world's technology.</h1>
     </section>
 
+    <section class="content">
 
-
-
-    <section class="container">
-
-        <div class="row">
-
-
-            <div class="col-sm-6">
+        <!-- <div class="container"> -->
+        <article>
+            <div class="profile-container">
                 <a href="marie-van-brittan.html">
-                    <figure>
+                    <figure class="Inventor-img">
                         <img src="imageProfile/Marie van Brittan.png">
+                        <figcaption>
+                            <h3>Marie Van B. Brown</h3>
+                        </figcaption>
                     </figure>
-                    <h3>Marie Van Brittan Brown</h3>
                 </a>
             </div>
 
             <!--Lewis Latimer-->
-            <div class="col-sm-6">
+            <div class="profile-container">
                 <a href="lewis-lamer.html">
-                    <figure>
+                    <figure class="Inventor-img">
                         <img src="imageProfile/lewis.png">
+                        <figcaption>
+                            <h3>Lewis Latimer</h3>
+                        </figcaption>
                     </figure>
-                    <h3>Lewis Latimer</h3>
                 </a>
             </div>
 
             <!--Grace Hopper-->
-            <div class="col-sm-6">
+            <div class="profile-container">
                 <a href="grace-hopper.html">
-                    <figure>
+                    <figure class="Inventor-img">
                         <img src="imageProfile/hopper.png">
+                        <figcaption>
+                            <h3>Grace Hopper</h3>
+                        </figcaption>
                     </figure>
-                    <h3>Grace Hopper</h3>
                 </a>
             </div>
             <!--Garret Augustus Morgan-->
-            <div class="col-sm-6">
+            <div class="profile-container">
                 <a href="garret-morgan.html">
-                    <figure>
+                    <figure class="Inventor-img">
                         <img src="imageProfile/Garrett-Morgan.jpg">
+                        <figcaption>
+                            <h3>Garret A. Morgan</h3>
+                        </figcaption>
                     </figure>
-                    <h3>Garret Augustus Morgan</h3>
                 </a>
             </div>
 
             <!--Frederick McKinley Jones-->
-            <div class="col-sm-6">
+            <div class="profile-container">
                 <a href="frederic-mckinley.html">
-                    <figure>
+                    <figure class="Inventor-img">
                         <img src="imageProfile/Frederick MicKinley.png">
+                        <figcaption>
+                            <h3>Frederick M. Jones</h3>
+                        </figcaption>
                     </figure>
-                    <h3>Frederick McKinley Jones</h3>
                 </a>
             </div>
-
             <!--Gladys Mae West-->
-            <div class="col-sm-6">
-                <a href="glagys-mae.html">
-                    <figure>
+            <div class="profile-container">
+                <a href="gladys-west.html">
+                    <figure class="Inventor-img">
                         <img src="imageProfile/Dr.Gladys B.png">
+                        <figcaption>
+                            <h3>Gladys Mae West</h3>
+                        </figcaption>
                     </figure>
-                    <h3>Gladys Mae West</h3>
                 </a>
             </div>
 
             <!--Charles Babbage-->
-            <div class="col-sm-6">
+            <div class="profile-container">
                 <a href="charles-baggage.html">
-                    <figure>
+                    <figure class="Inventor-img">
                         <img src="imageProfile/charles.png">
+                        <figcaption>
+                            <h3>Charles Babbage</h3>
+                        </figcaption>
                     </figure>
-                    <h3>Charles Babbage</h3>
                 </a>
             </div>
 
             <!--Tim Berners-Lee-->
-            <div class="col-sm-6">
+            <div class="profile-container">
                 <a href="tim-berners.html">
-                    <figure>
+                    <figure class="Inventor-img">
                         <img src="imageProfile/Berners-Lee-1000.jpg">
-                        <h3>Tim Berners-Lee</h3>
+                        <figcaption>
+                            <h3>Tim Berners-Lee</h3>
+                        </figcaption>
+                    </figure>
                 </a>
             </div>
 
             <!--Alexander Miles-->
-            <div class="col-sm-6">
+            <div class="profile-container">
                 <a href="alexandre-miles.html">
-                    <figure>
+                    <figure class="Inventor-img">
                         <img src="imageProfile/alaexandre.png">
+                        <figcaption>
+                            <h3>Alexander Miles</h3>
+                        </figcaption>
                     </figure>
-                    <h3>Alexander Miles</h3>
                 </a>
             </div>
-
-
-
-
-
-        </div>
+        </article>
     </section>
     <footer>
-        <div class="row first-footer-div">
-            <p class="col-sm-4">&copy;2024</p>
+        <div class="contact-container">
+            <p>&copy;2024 ZanaRecords</p>
 
-            <div class="col-sm-8 text-right">
-                <div class="col-sm-1 social-media">
-                    <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/facebook-grey.svg">
-                </div>
-                <div class="col-sm-1 social-media">
-                    <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/twitter-grey.svg">
-                </div>
-                <div class="col-sm-1 social-media">
-                    <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/instagram-grey.svg">
-                </div>
-                <div class="col-sm-1 social-media">
-                    <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/medium-grey.svg">
-                </div>
+            <div class="img-contact-container">
+                <h4>Reach Us On:</h4>
+                <figure>
+                    <img src="images/1920-round-facebook-logo-isolated-on-white-background.jpg">
+                </figure>
+                <figure>
+                    <img style="background-color: white;" src="images/x-twitter.svg">
+                </figure>
+                <figure>
+                    <img src="images/vecteezy_square-instagram-logo-isolated-on-white-background_34853748.jpg">
+                </figure>
+
             </div>
         </div>
     </footer>
@@ -171,4 +186,3 @@
 </body>
 
 </html>
-<figure>
