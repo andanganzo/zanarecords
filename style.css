@@ -1,62 +1,96 @@
+/*General styles*/
+html {
+  font-size: 20px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
-  background-color: rgb(64, 63, 63) !important;
+  /*Ces couleurs ne sont pas distrayantes et
+   fournissent une toile propre pour le contenu.*/
+  background-color: rgb(211, 211, 211);
+  height: 90rem;
 }
 
-figure img {
-  height: 20vmax;
-  width: 20vmax;
-  border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-div>h2 {
-  font-size: 2vmax;
-
-}
 
 /*header*/
 header {
   background-color: rgb(23, 30, 93);
-  width: 100% !important;
-  height: 7em;
-  z-index: 1;
-  transition: all 0.2s ease-in-out;
-}
-
-header {
+  width: 100%;
+  height: 5rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  /* transition: all 0.2s ease-in-out; */
+  display: flex;
+}
+
+.categories-nav {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: end;
+  background-color: rebeccapurple;
+
+}
+
+.categories-ul {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+  margin-left: auto;
+}
+
+.categories-ul li a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.logo-zanaRecords:hover,
+.categories-ul li a:hover {
+  color: #cfcbcb;
+}
+
+.categories-ul li {
+  list-style: none;
+  margin-left: 1rem;
 }
 
 /* add space for fixed header when it's fixed to top */
-header+.content {
+/* header+.content {
   margin-top: 8rem;
+} */
+
+
+.nav-div {
+  background-color: rgb(211, 211, 211);
+  position: fixed;
+}
+
+.menu-bar {
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-  background-color: hsl(0, 0%, 100%) !important;
-  width: 25px;
-  height: 2px;
+  background-color: hsl(0, 0%, 100%);
+  width: 1.6rem;
+  height: 0.17rem;
   margin: 6px 0;
-  color: hsl(0, 0%, 100%);
 
 }
 
-.navContainer {
-  /*navContainer in  js*/
-  align-items: center;
-  width: fit-content;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 3px;
-  background-color: #f3f3f3;
+.logo-zanaRecords {
+  font-size: 1.4rem;
+}
+
+
+.a-linkTo-homePage {
+  text-decoration: none;
 }
 
 nav a {
@@ -65,20 +99,21 @@ nav a {
 
 .menuBar-button {
   background-color: transparent;
-  margin: 10px 0px 0px 20px !important;
   opacity: 0.9;
   border: none;
-
+  cursor: pointer;
 }
 
-.closeMenuBarButton {
-  font-size: 2em;
-  font-weight: 900;
-  background-color: transparent;
-  height: fit-content;
+.menu-bar:hover {
+  background-color: #a8a4a4;
+}
+
+
+header .button-menu-holder-container {
+  display: flex;
   width: fit-content;
-  opacity: 0.9;
-  margin-left: 198px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header div h1 {
@@ -87,80 +122,254 @@ header div h1 {
   letter-spacing: 0.2em;
   font-weight: bold;
   font-size: 20px;
-  margin: 5px !important;
-  padding: 0px !important;
-}
-
-header>.a-div {
-  width: fit-content;
-  margin: -32px 40px;
-  font-family: serif;
-
 }
 
 
-/**********Section***************/
-section {
-  /* background-color: rgb(85, 82, 82); */
-  align-items: center;
-  margin-top: 120px;
-}
 
 
-/*--------------------new-------------------------------------*/
-h3 {
-  display: flex;
-}
+/**********Section TITLE***************/
 
-.jumbotron {
+.inventors-title {
   display: flex;
   align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
   background-image: url('images/jumpstronTitleBackground.png');
   background-size: cover;
-  opacity: 0.8;
+  background-repeat: no-repeat;
   color: #ffffff;
-  height: 20em;
-  margin-top: 100px;
+  height: 20rem;
 }
 
-.jumbotron h1 {
+.inventors-title h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 1000;
-  margin: 0;
-  color: #FFFFFF !important;
-  background-color: rgba(41, 40, 39, 0.5);
+  font-variant: small-caps;
+  font-style: italic;
 }
 
-section .row figure img {
-  margin: 0 0 5px;
-  width: 90%;
+/*--------------------content-------------------------------------*/
 
-}
-
-.col-sm-6 {
-  margin-bottom: 2em;
-}
-
-figure img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0px;
-}
-
-figure {
-  margin-bottom: 0px;
-}
-
-footer {
-  font-size: 12px;
-  padding: 20px 0;
-}
-
-footer .col-sm-8 {
-  display: flex;
-  justify-content: flex-end;
-}
-
-footer .row {
+.content {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.profile-container {
+  /* background-color: gold; */
+  height: 95%;
+  width: 95%;
+  background-color: rgbA(253, 252, 252, 0.1);
+
+}
+
+.Inventor-img {
+  /* background-color: rgb(23, 30, 93); */
+  height: 90%;
+  width: 90%;
+  margin-left: 20px;
+  padding-top: 1.2rem;
+}
+
+.profile-container figure img {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+
+h3,
+a {}
+
+figcaption {
+  /* background-color: blue !important; */
+  display: flex;
+  justify-content: center;
+}
+
+figcaption h3 {
+  /* background-color: blue !important; */
+  display: flex;
+  justify-content: center;
+}
+
+
+/*inventors inside*/
+.inventor-container {
+  display: flex;
+
+}
+
+.divContained-Img-Description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.divContained-Img-Description div {
+  justify-content: center;
+  margin-bottom: 2rem;
+
+}
+
+.divContained-Img-Description h2 {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+
+}
+
+.divContained-Img-Description img {
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
+.divContained-Img-Description p {
+  font-size: 1.2rem;
+  width: 50%;
+  margin: auto;
+
+}
+
+/*js styles*/
+
+.menu-Inventor-container {
+  background-color: rgb(211, 211, 211);
+}
+
+.BackCloseMenuBarButton {
+  border-bottom: 0.1rem solid #a54242;
+  height: fit-content;
+}
+
+
+.closeMenuBarButton {
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: transparent;
+  height: fit-content;
+  width: fit-content;
+
+  opacity: 0.9;
+  margin-left: 180px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #a8a4a4;
+}
+
+.nav-Mother-Container {
+  /*navContainer in  js*/
+  align-items: center;
+  width: fit-content;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+}
+
+.inventorListNav {
+  background-color: rgb(211, 211, 211);
+}
+
+.inventorListNav a {
+  color: #000;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.backMenuBarButton img {
+  width: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-Mother-Container ul {
+  display: flex;
+  cursor: pointer;
+}
+
+.nav-Mother-Container ul:hover {
+  color: rgb(52, 51, 51);
+}
+
+.nav-Mother-Container h3 {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*****Footer*******/
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background-color: rgb(23, 30, 93);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  /* border-color: rgb(65, 62, 62); */
+}
+
+.contact-container p {
+  display: flex;
+  margin-left: 4rem;
+}
+
+.img-contact-container {
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+}
+
+.img-contact-container figure img {
+  width: 2rem;
+  width: 2rem;
+}
+
+
+
+
+/*media queries*/
+
+@media only screen and (min-width: 412px) and (max-width: 723px) {
+  .inventors-title {
+    margin-top: 20%;
+
+    height: 10rem;
+  }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 723px) {
+  .inventors-title h1 {
+    width: 10rem;
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+
+  }
+}
+
+
+@media only screen and (min-width: 412px) and (max-width: 723px) {
+  figcaption h3 {
+    font-size: 0.4rem;
+  }
 }
