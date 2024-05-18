@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html ang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
-  <title>inventors</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 social-media.0">
+    <title>inventors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" -->
+        <!-- integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="row">
-      <!--"nav-div" contains inventors list navigation liks-->
-      <div class="nav-div"></div>
-      <button class="menuBar-button" onclick="
+    <header>
+            <!--"nav-div" contains inventors list navigation liks-->
+            <div class="nav-div"></div>
+            <div class="button-menu-holder-container">
+                <button class="menuBar-button" onclick="
                 menuBarButton.style='opacity: 0';
                 logoH1.style='opacity: 0';
                 openCloseMenu();
                 ">
-        <div class="menu-bar">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+            <div class="menu-bar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+            <a class="a-linkTo-homePage" href="index.html">
+                <h1 class="logo-zanaRecords logoH1">ZanaRecords</h1>
+            </a>
         </div>
-    </div>
-    </button>
-    <div class="a-div"><a class="h1-a" href="index.html">
-        <h1 class="logoH1">ZanaRecords</h1>
-      </a></div>
-
-  </header>
+        <!-- <nav class="categories-nav"> -->
+        <ul class="categories-ul">
+            <li class=""><a href="index.html">Inventors</a></li>
+            <li class=""><a href="">Intertainment</a></li>
+            <li class=""><a href="">Politics</a></li>
+        <!-- </ul> -->
+    </nav>
+    </header>
 
   <!--Lewis Latimer-->
-  <section class="container">
-    <div class="divContained-Img-Description row" id="Lewis_Howard_Latimer">
+  <section class="inventor-container">
+    <article class="divContained-Img-Description row" id="Lewis_Howard_Latimer">
       <div class="col-sm-6">
-        <h3>Lewis Latimer</h3>
+        <h2>Lewis Latimer</h2>
         <figure>
           <img class=" thumbnail-img" src="images/lewis.png">
           <figcaption>Lewis and his invetion plan </figcaption>
@@ -65,29 +72,28 @@
           <a href="https://en.wikipedia.org/wiki/Lewis_Howard_Latimer" target="_blank">learn more</a>
         </p>
       </div>
-    </div>
+    </article>
   </section>
 
-  <section>
-    <footer>
-      <div class="row first-footer-div">
-        <p class="col-sm-4">&copy;2024</p>
+  <footer>
+    <div class="contact-container">
+        <p>&copy;2024 ZanaRecords</p>
 
-        <div class="col-sm-8 text-right">
-          <div class="col-sm-1 social-media">
-            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/facebook-grey.svg">
-          </div>
-          <div class="col-sm-1 social-media">
-            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/twitter-grey.svg">
-          </div>
-          <div class="col-sm-1 social-media">
-            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/instagram-grey.svg">
-          </div>
-          <div class="col-sm-1 social-media">
-            <img src="https://content.codecademy.com/projects/make-a-website/lesson-4/medium-grey.svg">
-          </div>
+        <div  class="img-contact-container">
+            <h4>Reach Us On:</h4>
+            <figure>
+                <img src="images/1920-round-facebook-logo-isolated-on-white-background.jpg">
+            </figure>
+            <figure>
+                <img style="background-color: white;" src="images/x-twitter.svg">
+            </figure>
+            <figure>
+                <img src="images/vecteezy_square-instagram-logo-isolated-on-white-background_34853748.jpg">
+            </figure>
+
         </div>
-      </div>
-    </footer>
-  </section>
-  <script src="interactions.js"></script>
+    </div>
+</footer>
+<script src="interactions.js"></script>
+</body>
+</html>
