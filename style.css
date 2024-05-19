@@ -277,7 +277,7 @@ figcaption p:hover {
   opacity: 0.9;
   display: flex;
   margin-left: auto;
-  margin-top: -50px;
+  margin-bottom: auto;
   
   cursor: pointer;
   border: none;
@@ -315,6 +315,7 @@ figcaption p:hover {
   width: 2rem;
   background-color: transparent;
   cursor: pointer;
+  margin-right: auto ;
 }
 
 .nav-Mother-Container ul {
@@ -486,7 +487,7 @@ footer {
 @media screen and (min-width: 260px) and (max-width: 723px) {
   .inventors-title h1 {
     width: 10rem;
-    font-size: 1rem;
+    font-size: 2.2rem;
     display: flex;
     text-align: center;
 
