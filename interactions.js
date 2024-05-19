@@ -107,8 +107,10 @@ function openCloseMenuHome() {
           <ul id="ulNav-Mother-Container">
             <li onclick="
                 navDiv.innerHTML = allInventors;
-            "><h3>Inventors           </h3>
+            "><h3>Inventors</h3>
             </li>
+            <li><h3>Intertainment</h3></li>
+            <li><h3>Politics</h3></li>
         </ul>
       </div>`; onOff = true;
       }
