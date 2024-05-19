@@ -62,25 +62,25 @@ if (navDiv && !onOff) {
           logoH1.style='opacity: 1';
       ">X</button>
 
-      <nav class='inventorListNav' id='nav-id'>
-      <a href='garrett-morgan.html'>Garret Augustus Morgan</a><br><br>
+        <nav class='inventorListNav' id='nav-id'>
+            <a href='garrett-morgan.html'><li>Garret Augustus Morgan</li></a><br><br>
 
-      <a href='tim-berners.html'>Tim Berners-Lee</a><br><br>
+            <a href='tim-berners.html'><li>Tim Berners-Lee</li></a><br><br>
 
-      <a href='gladys-west.html'>Gladys Mae West</a><br><br>
+            <a href='gladys-west.html'><li>Gladys Mae West</li></a><br><br>
 
-      <a href='marie-van-brittan.html'>Marie Van Brittan Brown</a><br><br>
-      
-      <a href='charles-babbage.html'>Charles Babbage</a><br><br>
+            <a href='marie-van-brittan.html'><li>Marie Van Brittan Brown</li></a><br><br>
 
-      <a href='frederic-mckinley.html'>Frederick McKinley Jones</a><br><br>
+            <a href='charles-babbage.html'><li>Charles Babbage</li></a><br><br>
 
-      <a href='alexandre-miles.html'>Alexander Miles</a><br><br>
+            <a href='frederic-mckinley.html'><li>Frederick McKinley Jones</li></a><br><br>
 
-      <a href='lewis-lamer.html'>Lewis Latimer</a><br><br>
+            <a href='alexandre-miles.html'><li>Alexander Miles</li></a><br><br>
 
-      <a href='grace-hopper.html'>Grace Hopper</a><br><br>
-      </nav> 
+            <a href='lewis-lamer.html'><li>Lewis Latimer</li></a><br><br>
+
+            <a href='grace-hopper.html'><li>Grace Hopper</li></a><br><br>
+        </nav> 
   </div>`; onOff = true;
   
   } 
