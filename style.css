@@ -467,7 +467,7 @@ footer {
 /*media queries  inventor-title */
 @media  screen and (min-width: 260px) and (max-width: 723px) {
   .inventors-title {
-    margin-top: 20%;
+    /* margin-top: 20%; */
     height: 10rem;
   }
 }
