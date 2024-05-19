@@ -16,7 +16,7 @@ body {
 header {
   background-color: rgb(23, 30, 93);
 
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
