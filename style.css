@@ -16,7 +16,7 @@ body {
 header {
   background-color: rgb(23, 30, 93);
 
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -260,6 +260,7 @@ figcaption p:hover {
 
 .menu-Inventor-container {
   background-color: rgb(211, 211, 211);
+  potition: fixed;
 }
 
 .BackCloseMenuBarButton {
