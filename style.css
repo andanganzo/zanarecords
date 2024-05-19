@@ -1,6 +1,7 @@
 /*General styles*/
 html {
   font-size: 20px;
+   width: fit-content;
 }
 
 body {
