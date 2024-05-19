@@ -339,7 +339,7 @@ figcaption p:hover {
 
 /*****Footer*******/
 footer {
-  position: static;
+  position: sticky;
   bottom: 0;
   right: 0;
   left: 0;
