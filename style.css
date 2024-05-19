@@ -275,7 +275,10 @@ figcaption p:hover {
   width: fit-content;
 
   opacity: 0.9;
-  margin-left: 180px;
+  display: flex;
+  margin-left: auto;
+  margin-top: -50px;
+  
   cursor: pointer;
   border: none;
   border: 1px solid #a8a4a4;
@@ -292,15 +295,23 @@ figcaption p:hover {
 
 .inventorListNav {
   background-color: rgb(211, 211, 211);
+  border: 2px solid rgb(23, 30, 93);
+  padding-right: 1rem;
 }
 
 .inventorListNav a {
+  width: fit-content;
   color: #000;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: dotted;
+  display: flex;
+  margin-left: 0.5rem;
+  text-align: left;
 }
 
 .backMenuBarButton img {
+  display: flex;
   width: 2rem;
   background-color: transparent;
   cursor: pointer;
@@ -327,10 +338,10 @@ figcaption p:hover {
 
 /*****Footer*******/
 footer {
-  position: static;
+  /* position: static;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: 0; */
 
   background-color: rgb(23, 30, 93);
   color: white;
