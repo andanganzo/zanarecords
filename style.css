@@ -5,10 +5,8 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  /*Ces couleurs ne sont pas distrayantes et
-   fournissent une toile propre pour le contenu.*/
   background-color: rgb(211, 211, 211);
-  /* height: 90rem; */
+
 }
 
 
@@ -24,21 +22,21 @@ header {
   display: flex;
 }
 
-.categories-nav {
+.categories-nav {/*created in JS*/
   display: flex;
   align-items: center;
   margin: auto;
   justify-content: end;
 }
 
-.categories-ul {
+.categories-ul {/*created in JS*/
   display: flex;
   align-items: center;
   margin-right: 4rem;
   margin-left: auto;
 }
 
-.categories-ul li a {
+.categories-ul li a {/*created in JS*/
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.1rem;
@@ -154,14 +152,13 @@ header div h1 {
 
 /*--------------------content-------------------------------------*/
 
-.content-container {
+main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.article-container {
+.allProfiles-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -209,13 +206,6 @@ figcaption p:hover {
 }
 
 
-
-/*inventors inside*/
-/* .inventor-container {
-  display: flex;
-
-} */
-
 .divContained-Img-Description {
   display: flex;
   align-items: center;
@@ -260,7 +250,7 @@ figcaption p:hover {
 
 .menu-Inventor-container {
   background-color: rgb(211, 211, 211);
-  potition: fixed;
+  position: fixed;
 }
 
 .BackCloseMenuBarButton {
@@ -419,33 +409,44 @@ footer {
 
 
 
-/*media queries .article-container*/
+/*media queries .allProfiles-container*/
 
-@media only screen and (min-width: 260px) and (max-width: 420px) {
-  .article-container {
+@media only screen and (max-width: 480px) {
+  .allProfiles-container {
     grid-template-columns: 1fr;
   }
-}
+  .profile-container, .profile-container img {
+    width: 100%;
+  }
+  html, body  {
+      overflow-x: hidden;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+    
+  }
 
-@media only screen and (min-width: 421px) and (max-width: 750px) {
-  .article-container {
+@media only screen and (min-width: 481px) and (max-width: 750px) {
+  .allProfiles-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 760px) and (max-width: 1200px) {
-  .article-container {
+  .allProfiles-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (min-width: 1250px) and (max-width: 2000px) {
-  .article-container {
+  .allProfiles-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media only screen and (min-width: 2050px) and (max-width: 3000px) {
-  .article-container {
+  .allProfiles-container {
     grid-template-columns: repeat(5, 1fr);
   }
 }
